@@ -40,7 +40,7 @@ NÃO devem começar com números nem ter espaços ou palavras reservadas.
 
         System.out.println("Olá, mundo!");  // "imprime" ou mostra o conteúdo entre parênteses na tela/output
 
-        // TIPOS PRIMITIVOS EM JAVA: tipos de variáveis (dados básicos) com valores simples
+        //TIPOS PRIMITIVOS EM JAVA: tipos de variáveis (dados básicos) com valores simples
 
         //INTEIROS: Representam números inteiros. Incluem Byte, Int, Short e Long
         byte numeroBte = (byte)1;
@@ -164,4 +164,4 @@ de forma a torná-lo mais organizado e fácil de ler.
 **/
 
 
-}
+
