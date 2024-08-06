@@ -1,30 +1,69 @@
 package aulas;
 
+import org.w3c.dom.ls.LSOutput;
+
 public class Aula2 {
     /*
-OPERADORES ARITMÉTICOS
+ OPERADORES: símbolos especiais com um significado próprio para a linguagem,
+ sendo associados a determinadas operações.
 
-+ Soma
-- Subtração
-/ Divisão inteira
-* Multiplicação
-% Resto de uma divisão inteira
-= Operador de atribuição (guarda um valor)
+ OPERADOR DE ATRIBUIÇÃO: O operador de atribuição é utilizado para definir
+ o valor inicial ou sobrescrever o valor de uma variável. Em Java, o operador
+ de atribuição é o igual " = " .
 
-OBS: uma variável soma = soma + x também pode ser escrita assim: soma += x.
+
+OPERADORES ARITMÉTICOS: para operações matemáticas.
+
+" + " Soma
+" - " Subtração
+" / " Divisão inteira
+" * " Multiplicação
+" % " Resto de uma divisão inteira
+" = " Operador de atribuição (guarda um valor na variável)
+
+OBS¹: uma variável soma = soma + x também pode ser escrita assim: soma += x.
 O mesmo é válido para os outros operadores aritméticos ( - / e * )
 
-OPERADORES CONDICIONAIS
+OBS²: o operador de adição " + ", quando utilizado em variáveis do tipo texto (String),
+realizará a concatenação dos textos (ou seja, vai unir os textos na sentença). Também
+pode concatenar números, desde que estejam entre aspas numa String.
 
-< Menor que
-> Maior que
-<= Menor ou igual a
->= Maior ou igual a
-== igual a
-!= diferente de
+
+OPERADORES UNÁRIOS: são aplicados juntamente com um operador aritmético,
+realizando trabalhos como incrementar, decrementar, inverter valores numéricos
+e booleanos.
+"+" positiva os valores
+"-"  negativa os valores
+"++" incrementa/aumenta o valor da variável em uma unidade
+"--" decrementa/reduz o valor da variável em uma unidade
+" ! " operador lógico de negação, que nega o valor de uma expressão booleana
 
 OBS: Incremento --> i++, ++i e i = i + 1 são incrementos, ou seja, comandos
 que aumentam o valor de uma variável de tipo numérico.
+
+OPERADORES RELACIONAIS
+
+" < "  Menor que
+" > "  Maior que
+" <= " Menor ou igual a
+" >= " Maior ou igual a
+" == " igual a
+" != "  diferente de
+
+OBS: OPERADOR TERNÁRIO --> é uma forma resumida para resumir uma condição
+e escolher um dentre dois valores. Representado por " ? : ".
+Assim:
+
+expressão condicional ? comando caso seja verdadeira : comando caso seja falsa
+
+
+OPERADORES LÓGICOS: permitem criar expressões lógicas maiores, a partir da
+junção de duas ou mais expressões.
+
+" && " operador lógico "E" --> Verdadeira APENAS se todas as expressões forem Verdadeiras
+" || " operador lógico "OU" --> Falsa APENAS se todas as expressões forem Falsas
+
+
 */
 
     public static void main(String[] args) {
@@ -69,5 +108,69 @@ que aumentam o valor de uma variável de tipo numérico.
         i = i + 1;
         System.out.println("Agora i é = " + i);
 
+        //CONCATENAÇÃO
+        String nomeCompleto = "Cintia " + "Uz";
+        System.out.println(nomeCompleto);
+        String numerosConcatenados = "1" + "1";
+        System.out.println(numerosConcatenados);
+
+        //UNÁRIOS
+        int cincoNegativo = 5;
+        cincoNegativo = - cincoNegativo;
+        System.out.println(cincoNegativo);
+
+        int cincoPositivo = -5;
+        cincoPositivo = -cincoPositivo; //cincoPositivo * -1 (um número negativo * -1 torna-se positivo)
+        System.out.println(cincoPositivo);
+
+        //INCREMENTO
+        int numberOne = 1;
+        System.out.println(numberOne++); //não imprime logo o valor atualizado
+        System.out.println(numberOne);
+        //o incremento ++numberOne no system.out imprime logo o valor atualizado
+        System.out.println(++numberOne);
+        //numberOne++; é o mesmo que numberOne + numberOne + 1;
+        //O mesmo vale para o decremento --
+
+        //NEGANDO OU INVERTENDO O VALOR DE UMA VARIÁVEL BOOLEANA
+        boolean terraRedonda = false;
+        terraRedonda = !terraRedonda; //ou poderíamos apenas trocar o valor da variável por "true"
+        System.out.println(terraRedonda);
+
+        //OPERADOR TERNÁRIO:
+        int a, b;
+        a = 5;
+        b = 6;
+        String resultadosTexto = a == b ? "verdadeiro" : "falso";
+        System.out.println(resultadosTexto);
+
+        int resultadosNumericos = a == b ? 1 : 0;
+        System.out.println(resultadosNumericos);
+
+        //OPERADORES RELACIONAIS:
+        int numeroUm = 3;
+        int numeroDois = 4;
+        boolean simNao = numeroUm == numeroDois;
+        System.out.println(simNao);
+
+        simNao = numeroUm != numeroDois;
+        System.out.println(simNao);
+
+        simNao = numeroUm > numeroDois;
+        System.out.println(simNao);
+
+        simNao = numeroUm < numeroDois;
+        System.out.println(simNao);
+
+        String nome1 = "Gleyson";
+        String nome2 = "Gleyson";
+        System.out.println(nome1 == nome2);
+
+        //PARA COMPARAR OBJETOS, UTILIZAMOS O COMANDO .EQUALS
+        String nome3 = new String("Gleyson");
+        System.out.println(nome1.equals(nome3));
+
     }
 }
+
+//OBS: String NÃO É um tipo primitivo, mas um OBJETO em Java.
