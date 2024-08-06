@@ -23,8 +23,8 @@ EX:
 int numeroInteiro = 1;
 
 OBS: o termo "final" pode ser acrescentado ao início de uma variável para nunca
-mudar o seu valor. Além do "final", o nome da variável deve ser escrito em
-letras MAIÚSCULAS.
+mudar o seu valor. Além de "final", o nome da variável deve ser escrito em
+CAIXA ALTA.
 EX:
 int ano = 2021;
 ano = 2022;  --> neste caso, é possível mudar o valor da variável "ano" de 2021 para 2022.
