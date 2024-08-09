@@ -58,6 +58,28 @@ throws Exception --> significa que um método pode conter exceções, ou seja,
 que, a depender dos dados inseridos ou do código, ele pode apresentar imprevistos
 e, possivelmente, problemas.
 
+ESCOPO: pode ser entendido como o ambiente onde uma variável pode ser
+acessada. Em Java, o escopo de variáveis depende do bloco onde elas foram
+declaradas.
+
+EXEMPLO:
+
+public class Conta {
+
+//variável da classe Conta:
+double saldo = 10.0;
+
+public void sacar(double valor) {
+//variável local de método (só pertence ao método):
+double novoSaldo = saldo - valor;
+}
+public void imprimirSaldo( ) {
+//disponível em toda a classe:
+System.out.println(saldo);
+//somente o método sacar conhece a variável abaixo:
+System.out.println(novoSaldo);
+    }
+}
 
 */
 
