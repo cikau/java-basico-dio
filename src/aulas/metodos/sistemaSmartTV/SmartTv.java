@@ -1,6 +1,4 @@
 package aulas.metodos.sistemaSmartTV;
 
-public class smartTv {
-
-    
+public class SmartTv {
 }
