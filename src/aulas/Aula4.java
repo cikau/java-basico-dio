@@ -6,11 +6,11 @@ public class Aula4 {
 
 CLASSE: é o molde, o projeto de algum objeto real. O nome de uma classe
 deve ter SEMPRE a primeira letra MAIÚSCULA, além de nomes compostos
-com CamelCase.
+com CamelCase. São definidas por atributos (variáveis e valores) e métodos.
 EX: uma conta de banco.
 
 public class ContaDoBanco {
- código aqui
+ //código aqui
 }
 
 OBJETO/INSTÂNCIA: é a representação do objeto em si. Instanciar é criar
@@ -19,13 +19,24 @@ EX: é a conta de banco de um cliente.
 
 MÉTODOS (ou FUNÇÕES): comandos que servem para evitar repetição do código e facilitar
 a vida do programador. Representam os comportamentos das classes (o que cada classe
-faz e como faz). Devem ser nomeados como verbos.
-EX: na classe ContaDoBanco, criar métodos como sacarDinheiro, depositarDinheiro, verSaldo etc.
+faz e como faz). Devem ser nomeados como verbos e PODEM ou NÃO ter PARÂMETROS. Devem ser
+SEMPRE definidos dentro de uma classe.
 
-EXEMPLO DE MÉTODO:
+EXEMPLOS DE MÉTODOS:
+
+-Método com parâmetros:
 public int somar (int a, int b) {
 return a + b;
 }
+
+-Método sem parâmetros:
+concluirProcessamento ( ) { }
+
+CRITÉRIO DE NOMEAÇÃO DE MÉTODOS:
+
+- Deve ser nomeado como VERBO;
+- Padrão camelCase (todas as letras minúsculas, exceto a primeira letra da segunda palavra)
+
 
 public = método pode ser acessado por qualquer classe.
 
@@ -42,6 +53,11 @@ parâmetros = são variáveis e afins que entregamos ao método.
 return = retorna os valores do método.
 
 static = permite que o método seja acessado por uma classe.
+
+throws Exception --> significa que um método pode conter exceções, ou seja,
+que, a depender dos dados inseridos ou do código, ele pode apresentar imprevistos
+e, possivelmente, problemas.
+
 
 */
 
