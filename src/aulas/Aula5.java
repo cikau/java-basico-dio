@@ -20,7 +20,7 @@ public class Aula5 {
 
 JAVA DOC --> gerador de documentação criado pela Sun Microsystem para
 documentar a API dos programas em Java , a partir do código-fonte. O
-resultado é expresso em HTML. 
+resultado é expresso em HTML.
 
 DOCUMENTAÇÃO --> reúne exemplos, detalhamentos, versões, formas de
 métodos e atributos em Java. É como se fosse um "manual do usuário".
