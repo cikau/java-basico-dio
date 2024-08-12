@@ -45,9 +45,4 @@ EX: @param (descreve um parâmetro passado para um método ou construtor),
         return numeroUm + numeroDois;
     }
 
-    public static void main(String[] args) {
-    
-    }
-
-
 }
