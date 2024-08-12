@@ -18,7 +18,9 @@ public class Aula5 {
     extends, throws, interface, implements, new, static...
     - Controle de fluxo no bloco de código: break, continue, case...
 
-JAVA DOC
+JAVA DOC --> gerador de documentação criado pela Sun Microsystem para
+documentar a API dos programas em Java , a partir do código-fonte. O
+resultado é expresso em HTML. 
 
 DOCUMENTAÇÃO --> reúne exemplos, detalhamentos, versões, formas de
 métodos e atributos em Java. É como se fosse um "manual do usuário".
