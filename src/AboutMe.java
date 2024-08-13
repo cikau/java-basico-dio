@@ -14,3 +14,8 @@ public class AboutMe {
         System.out.println("Minha altura é " + altura + " cm.");
     }
 }
+
+/*
+Neste caso, o usuário vai inserir dados pelo Prompt de Comando, mas há como
+essas informações serem inseridas dentro da IDE, por meio do comando SCANNER.
+ */

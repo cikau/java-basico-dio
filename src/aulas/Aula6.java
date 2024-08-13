@@ -18,11 +18,43 @@ public class Aula6 {
     }
  }
 
-SCANNER:
+SCANNER: esta classe permite que o usuário tenha uma interação mais assertiva
+com o programa. Ela captura tudo o que o usuário digita, ou seja, as informações que ele
+insere.
+Usamos assim:
 
-EXECUÇÃO VIA IDE:
+import java.util.Scanner; //aqui a gente informa ao Java que vai usar o Scanner
 
-EXECUÇÃO VIA PROMPT DE COMANDO:
+public class NomeClasse {
+
+public static void main(String[ ] args) {
+    //criando o objeto Scanner:
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.println("Digite o seu nome: ");
+    String nome = scanner.next( );
+
+    System.out.println("Digite o seu sobrenome: ");
+    String sobrenome = scanner.next( );
+
+    System.out.println("Digite a sua idade: ");
+    int idade = scanner.nextInt( );
+
+    System.out.println("Digite a sua altura: ");
+    double altura = scanner.nextDouble( );
+
+    //imprimindo os dados inseridos pelo usuário:
+    System.out.println("Olá, me chamo " + nome + " " + sobrenome);
+    System.out.println("Tenho " + idade + " anos.");
+    System.out.println("A minha altura é :" + altura);
+
+    }
+
+}
+
+
+
+
 
     */
 }
