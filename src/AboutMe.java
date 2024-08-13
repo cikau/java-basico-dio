@@ -2,7 +2,7 @@ public class AboutMe {
 
     //testando os argumentos desta classe fora da IDE
 
-    public static void main(String[] args) {
+    public static void main(String[ ] args) {
 
         String nome = args[0]; // sempre começa em zero o índice do array
         String sobrenome = args[1];
