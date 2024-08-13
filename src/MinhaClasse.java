@@ -4,14 +4,12 @@ public class MinhaClasse {
 
     public static void main(String[] args) {
         System.out.println("Estou sendo executada pelo terminal do Windows!");
-    }MinhaClasse.java
+    }
 }
 
 /*
-Para executar o código no Prompt de Comando do Windows, vá na pasta "out", e depois em
-"ExecutandoForadaIDE", em que você deve clicar com o botão direito do mouse
- e escolher a opção "copy path/reference". Copie o path do projeto:
-C:\Users\Cintia\Documents\LEITURA E ESTUDOS\PROGRAMAÇÃO\MeusRepositorios\JAVA\ExecutandoForadaIDE\out\production\ExecutandoForadaIDE
+Para executar o código no Prompt de Comando do Windows, copie o seguinte caminho/path:
+C:\Users\Cintia\Documents\LEITURA E ESTUDOS\PROGRAMAÇÃO\MeusRepositorios\JAVA\out\production\JAVA
 
 Digite "cmd" em pesquisar, sem as aspas, para entrar no prompt de comando do Windows. Lá no prompt, digite "cd" e dê um espaço simples
 para colocar o endereço do projeto.
