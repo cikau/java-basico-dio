@@ -25,6 +25,8 @@ public class TestandoScanner {
         System.out.println("Tenho " + idade + " anos.");
         System.out.println("A minha altura é " + altura + " cm.");
 
+        scanner.close(); //devemos fechar a classe para evitar vazamentos de recursos
+
     }
 
 }
