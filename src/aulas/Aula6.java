@@ -48,6 +48,7 @@ public static void main(String[ ] args) {
     System.out.println("Tenho " + idade + " anos.");
     System.out.println("A minha altura é :" + altura);
 
+scanner.close(); //devemos fechar a classe para evitar vazamentos de recursos
     }
 }
     */
