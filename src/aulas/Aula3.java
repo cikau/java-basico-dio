@@ -1,5 +1,7 @@
 package aulas;
 
+import java.sql.SQLOutput;
+
 public class Aula3 {
 
     /*
@@ -7,16 +9,19 @@ CONTROLE DE FLUXO
 
  ESTRUTURAS CONDICIONAIS: if-else e switch-case
 
+**CONDICIONAL SIMPLES:
 if (condição booleana) {
 comando a ser executado SE a condição for Verdadeira
 }
 
+**CONDICIONAL COMPOSTA:
 if (condição booleana) {
 comando a ser executado SE a condição for Verdadeira
 } else {
 comando a ser executado CASO a condição seja falsa
 }
 
+**CONDICIONAL ENCADEADA:
 if (condição1) {
 comando a ser executado SE a condição 1 for Verdadeira
 } else if (condição 2) {
@@ -28,6 +33,25 @@ comando a ser executado CASO as condições anteriores sejam Falsas
 ***Em vez do ELSE IF, pode-se usar apenas o IF, quantas vezes forem
 necessárias.
 
+**CONDIÇÃO TERNÁRIA: uso do ? : para abreviar as condições. Antes da
+?, colocamos a condição principal seguida do código a ser executado, caso ela
+seja verdadeira. E, após os :, colocamos o código a ser executado se a
+condição for falsa.
+
+EX:
+public static void main(Strings[ ] args) {
+int nota = 7;
+String resultado = nota >= 7 ? "Aprovado" : "Reprovado;
+System.out.println(resultado);
+}
+
+**SWITCH-CASE: essa estrutura compara o valor de cada caso com o da variável,
+sequencialmente, e sempre que encontra um valor correspondente, executa o
+código associado ao caso. Acrescentamos o comando BREAK ao final de cada
+bloco de códigos para evitar que as comparações continuem a ser executadas
+após um caso correspondente ter sido encontrado.
+
+EX:
 Switch (variável) {
 caso 1:
        comando;
@@ -35,6 +59,8 @@ caso 1:
 caso 2:
        comando;
        break;
+ default:
+       comando;
 }
 
 ***OBS: concatenando expressões booleanas.
@@ -133,6 +159,11 @@ ESTRUTURAS DE EXCEÇÃO: try-catch-finally, throw
             System.out.println("O número é menor que 5.");
         }
 
+        //CONDIÇÃO TERNÁRIA
+        int nota = 7;
+        String resultado = nota >= 7 ? "Aprovado" : "Reprovado";
+        System.out.println(resultado);
+
         //SWITCH
         int valor = 5;
 
@@ -146,6 +177,8 @@ ESTRUTURAS DE EXCEÇÃO: try-catch-finally, throw
             case 5:
                 System.out.println("É o número cinco");
                 break;
+            default:  //NÃO é obrigatório
+                System.out.println("INDEFINIDO");
         }
 
         //CONCATENANDO EXPRESSÕES BOOLEANAS
