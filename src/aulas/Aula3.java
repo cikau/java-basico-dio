@@ -3,7 +3,9 @@ package aulas;
 public class Aula3 {
 
     /*
-ESTRUTURAS DE CONTROLE: IF E ELSE
+CONTROLE DE FLUXO
+
+ ESTRUTURAS CONDICIONAIS: if-else e switch-case
 
 if (condição booleana) {
 comando a ser executado SE a condição for Verdadeira
@@ -35,7 +37,7 @@ caso 2:
        break;
 }
 
-CONCATENANDO EXPRESSÕES BOOLEANAS
+***OBS: concatenando expressões booleanas.
 
 && --> e
 || --> ou
@@ -43,7 +45,7 @@ CONCATENANDO EXPRESSÕES BOOLEANAS
 ! --> negação
 != --> diferente de
 
-ESTRUTURAS DE REPETIÇÃO
+ESTRUTURAS DE REPETIÇÃO: for, while, do-while
 
 WHILE: repete o comando enquanto a condição for verdadeira.
 int idade 15;
@@ -94,6 +96,10 @@ for (int i = 0; i < 10; i++) {
 código aqui
   }
 }
+
+ESTRUTURAS DE EXCEÇÃO: try-catch-finally, throw
+
+
 */
     public static void main(String[] args) {
 
