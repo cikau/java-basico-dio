@@ -73,16 +73,17 @@ caso 2:
 
 ESTRUTURAS DE REPETIÇÃO: for, while, do-while
 
-WHILE: repete o comando enquanto a condição for verdadeira.
+WHILE (enquanto): repete o comando enquanto a condição for verdadeira.
 int idade 15;
 while (idade < 18) {
 System.out.println(idade);
 idade = idade + 1;
 }
 
-FOR: mesma ideia do While, porém com um espaço para inicialização de variáveis e modificador.
-for (inicialização; condicao; incremento) {
-comando;
+FOR (para): mesma ideia do While, porém com um espaço para inicialização de
+variáveis e modificador.
+for (inicialização; validação ou condição; incremento) {
+comando que será executado até que a condição/validação se torne falsa;
 }
 
 ***Podemos usar os termos BREAk (para interromper o looping/laço atual) e CONTINUE (para continuar o próximo laço).
@@ -101,7 +102,8 @@ continue;
 System.out.println(i);
 }
 
-DO...WHILE: serve para executar um comando enquanto uma condição é avaliada.
+DO...WHILE (faça, enquanto): serve para executar um comando enquanto
+uma condição é avaliada.
 do {
 comandos aqui
 }
@@ -209,7 +211,41 @@ ESTRUTURAS DE EXCEÇÃO: try-catch-finally, throw
         System.out.println("Olá!");
         i = i + 1;
         }
+
+        **FOR EM ARRAYS: usamos o FOR também para interagir sobre arrays
+        e coleções. Em arrays, os elementos ficam numa coleção e cada um se encontra
+        em um índice. O índice de um array sempre começa em zero. Usamos aqui
+        o FOR...EACH.
+        EX:
+        public class ExemploFor {
+        public static void main(String[ ] args) {
+        String alunos[ ] = {"Felipe", "Jonas", "Júlia", "Marcos"};
+
+        for (int x = 0; x < alunos.length; x++) {
+        System.out.println("O aluno do índice X = " + x + " é " + alunos[x] );
+        }
+         }
+        }
+
+OU com o FOR...EACH
+
+     public class ExemploFor {
+        public static void main(String[ ] args) {
+        String alunos[ ] = {"Felipe", "Jonas", "Júlia", "Marcos"};
+
+    for (String aluno : alunos) {
+    System.out.println("Nome do aluno é " + aluno);
+       }
+      }
+    }
          */
+
+        //EXEMPLO DO FOR...EACH
+        String alunos[ ] = {"Felipe", "Jonas", "Júlia", "Marcos"};
+
+        for (String aluno : alunos) {
+            System.out.println("Nome do aluno é " + aluno);
+        }
 
         //EXEMPLO DE DO...WHILE:
         int inteiro = 0;
@@ -228,6 +264,32 @@ ESTRUTURAS DE EXCEÇÃO: try-catch-finally, throw
         int preIncremento = ++algumNumero;
         System.out.println("O número era 10, mas ficou: " + algumNumero + " \nNa outra variável, mudou também para: " + preIncremento);
 
+/*
+CONCEITOS IMPORTANTES
+
+--> BREAK: interrompe um laço de repetição.
+
+--> CONTINUE: interrompe a iteração atual.
+
+ */
+        //EXEMPLO BREAK
+        System.out.println("EXEMPLO DE BREAK");
+        for (int contagem = 1; contagem <= 5; contagem++){
+            if(contagem ==3)
+                break; //o break interrompe a contagem antes de chegar em 3
+            System.out.println(contagem);
+        }
+
+//EXEMPLO CONTINUE
+        System.out.println("EXEMPLO DE CONTINUE");
+for (int numeracao = 1; numeracao <= 5; numeracao++) {
+    if (numeracao == 3)
+        continue; //retira o 3 da contagem, mas continua contando após o 3
+    System.out.println(numeracao);
+}
+
     }
 }
+
+
 
