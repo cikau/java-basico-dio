@@ -74,6 +74,8 @@ caso 2:
 ESTRUTURAS DE REPETIÇÃO: for, while, do-while
 
 WHILE (enquanto): repete o comando enquanto a condição for verdadeira.
+Primeiro avalia, depois executa.
+
 int idade 15;
 while (idade < 18) {
 System.out.println(idade);
@@ -103,7 +105,7 @@ System.out.println(i);
 }
 
 DO...WHILE (faça, enquanto): serve para executar um comando enquanto
-uma condição é avaliada.
+uma condição é avaliada. Executa primeiro, depois avalia.
 do {
 comandos aqui
 }
