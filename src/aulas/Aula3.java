@@ -129,6 +129,61 @@ código aqui
 
 ESTRUTURAS DE EXCEÇÃO: try-catch-finally, throw
 
+**EXCEÇÕES: ao executar o código Java, diferentes erros podem acontecer:
+erros de codificação feitos pelo programador, erros de entrada etc.
+Exceções NÃO são erros, mas os comportamentos não previstos e/ou
+ não desejados do nosso programa. Ao prever tais exceções, para evitar que
+ elas aconteçam, o desenvolvedor estará implementando o Tratamento de
+ Exceções.
+
+ NOME DE ALGUMAS EXCEÇÕES EM JAVA:
+
+**java.lang.NullPointerException: ocorre quando tentamos obter alguma info
+de uma variável nula.
+
+**java.lang.ArithmeticException: ocorre quando tentamos dividir um valor por
+zero.
+
+**java.sql.SQLException: ocorre quando existe algum erro relacionado à
+interação com banco de dados.
+
+**java.io.FileNotFoundException: ocorre quando tentamos ler ou escrever
+em um arquivo inexistente.
+
+TRATAMENTO DE EXCEÇÕES EM JAVA:
+
+--> Try: essa instrução permite que você defina um bloco de código para ser
+testado quanto a erros, enquanto está sendo executado.
+
+--> Catch: essa instrução permite definir um bloco de código a ser executado
+caso ocorra um erro no bloco "try".
+
+--> Finally (opcional): essa instrução permite definir um bloco de código a ser executado,
+independentemente de ocorrer um erro ou não.
+
+**OBS: "try" e "catch" vêm em pares. "Finally" é opcional.
+
+ESTRUTURA DE UM BLOCO TRY...CATCH:
+
+try {
+//bloco de código conforme o que se espera que aconteça
+}
+catch (Exception nomeDaExceção) {
+//bloco de código que captura as exceções que podem ocorrer
+}
+
+EXEMPLO DE TRATAMENTO DE EXCEÇÕES NO ARQUIVO "EstruturasExcepcionais"
+
+HIERARQUIA DE DAS EXCEÇÕES: a linguagem Java possui uma variedade de
+classes que representam exceções. Essas classes são dispostas em uma hierarquia
+e chamadas de "Checked and Unchecked Exceptions". O que determina se uma
+exceção é "checked" ou "unchecked" é o risco de ela ser disparada e ser, logo, tratada.
+
+EXCEÇÕES CUSTOMIZADAS: podemos criar classes de exceções que tenham
+mais a ver com a aplicação.
+
+**Criando uma Classe de Exceção:
+public class NomeDaExcecao extends Exception { }
 
 */
     public static void main(String[] args) {
