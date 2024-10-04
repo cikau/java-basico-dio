@@ -14,7 +14,7 @@ public class Aula1 {
     // código aqui
     }
 
-    OBS: o NOME DA CLASSE deve SEMPRE começar com letra MAIÚSCULA
+    OBS: o NOME DA CLASSE deve SEMPRE começar com letra MAIÚSCULA. 
 
 Toda variável deve começar com letra minúscula e, em caso de nome composto,
 utiliza-se o "camelCase".
