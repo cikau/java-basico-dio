@@ -27,7 +27,7 @@ public class EstruturasExcepcionais {
      System.out.println("Tenho " + idade + " anos.");
      System.out.println("Minha altura é " + altura + " cm.");
      scanner.close();
-    }
+    } //fim do try neste ponto
     catch(InputMismatchException e ) { //importamos a classe da exceção definida
         System.err.println("Os campos 'idade' e 'altura' precisam ser numéricos."); //colocamos um código para lidar com a exceção em questão
     } //o "err" no lugar do "out" em System dá a entender que é um aviso de erro no programa
@@ -43,8 +43,7 @@ POSSÍVEIS EXCEÇÕES DO PROGRAMA ACIMA:
 - O valor da altura ter uma vírgula, em vez de um ponto (conforme padrão americano).
 
 SOLUÇÕES/TRATAMENTO PARA AS EXCEÇÕES:
--
--
--
+- Mensagem de erro
+- Solicitar inserção correta de dados
 
  */

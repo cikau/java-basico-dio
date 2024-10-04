@@ -69,33 +69,33 @@ junção de duas ou mais expressões.
     public static void main(String[] args) {
 
         //SOMA
-        double numero1Soma = 7.5;
-        double numero2Soma = 9.8;
-        double soma = numero1Soma + numero2Soma;
+        double parcela1 = 7.5;
+        double parcela2 = 9.8;
+        double soma = parcela1 + parcela2;
         System.out.println("7.5 + 9.8 = " + soma);
 
         // SUBTRAÇÃO
-        double numero1Subtracao = 7.5;
-        double numero2Subtracao = 9.8;
-        double subtracao = numero2Subtracao - numero1Subtracao;
+        double subtraendo = 7.5;
+        double minuendo = 9.8;
+        double subtracao = minuendo - subtraendo;
         System.out.println("9.8 - 7.5 = " + subtracao);
 
         //MULTIPLICAÇÃO
-        double numero1Mult = 7.5;
-        double numero2Mult = 9.8;
-        double multiplicacao = numero1Mult * numero2Mult;
+        double fator1 = 7.5;
+        double fator2 = 9.8;
+        double multiplicacao = fator1 * fator2;
         System.out.println("7.5 * 9.8 = " + multiplicacao);
 
         //DIVISÃO
-        double numero1Div = 7.5;
-        double numero2Div = 9.8;
-        double divisao = numero2Div / numero1Div;
+        double divisor1 = 7.5;
+        double dividendo1 = 9.8;
+        double divisao = dividendo1 / divisor1;
         System.out.println("9.8 / 7.5 = " + divisao);
 
         //RESTO DA DIVISÃO
-        int numero1Resto = 8;
-        int numero2Resto = 3;
-        int resto = numero1Resto % numero2Resto;
+        int dividendo2 = 8;
+        int divisor2 = 3;
+        int resto = dividendo2 % divisor2;
         System.out.println("O resto da divisão entre 8 e 3 = " + resto);
 
         //INCREMENTO

@@ -15,7 +15,7 @@ public class ContaDoBanco {
 
 OBJETO/INSTÂNCIA: é a representação do objeto em si. Instanciar é criar
 um objeto a partir de uma classe.
-EX: é a conta de banco de um cliente.
+EX: é a conta de banco real de um cliente.
 
 MÉTODOS (ou FUNÇÕES): comandos que servem para evitar repetição do código e facilitar
 a vida do programador. Representam os comportamentos das classes (o que cada classe

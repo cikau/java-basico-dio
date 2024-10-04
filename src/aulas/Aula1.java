@@ -8,13 +8,13 @@ public class Aula1 {
     //Ou com duas barras inclinadas antes de iniciar a citação, para citações de uma linha apenas
 
 /*
-    ANATOMIA DE UMA CLASSE:  ddd
+    ANATOMIA DE UMA CLASSE:
 
     public class NomeDaClasse {
     // código aqui
     }
 
-    OBS: o NOME DA CLASSE deve SEMPRE começar com letra MAIÚSCULA. 
+    OBS: o NOME DA CLASSE deve SEMPRE começar com letra MAIÚSCULA.
 
 Toda variável deve começar com letra minúscula e, em caso de nome composto,
 utiliza-se o "camelCase".
@@ -77,7 +77,7 @@ NÃO devem começar com números nem ter espaços ou palavras reservadas.
         String meuNome = "Cintia";
         System.out.println("Meu nome é " + meuNome);
 
-//VARIÁVEL: espaço onde se pode guardar alguma informação/valor.
+//VARIÁVEL: espaço onde se pode guardar alguma informação ou valor.
         int idade = 33; //tipo da variável --> nome --> = --> valor atribuído
         long cpf; //variável sem valor atribuído ainda
         cpf = 85390836553L; //valor atribuído à variável denominada "CPF". Não precisa repetir o tipo de dado aqui.
