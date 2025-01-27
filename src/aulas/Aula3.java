@@ -69,7 +69,7 @@ caso 2:
 || --> ou
 == --> igual a
 ! --> negação
-!= --> diferente de
+!= ou <> --> diferente de
 
 ESTRUTURAS DE REPETIÇÃO: for, while, do-while
 
