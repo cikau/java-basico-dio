@@ -119,6 +119,19 @@ JAVA x PSEUDOCÓDIGO:
 if -> se teste então
 else -> senão
 
+PSEUDOCÓDIGO:
+enquanto teste faça
+conjunto de instruções
+fim enquanto
+
+JAVA:
+while (   ) {
+conjunto de instruções
+}
+
+
+
+
      */
 
     public static void main(String[] args) {
