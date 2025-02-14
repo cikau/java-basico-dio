@@ -254,7 +254,7 @@ public class NomeDaExcecao extends Exception { }
         int e = 0;
         while (e < 10) {
             System.out.println(e);
-            e = e + 1;
+            e = e + 1; //contador: variável numérica que controla o nº de vezes que o conjunto de instruções será executado
         }
 
         //EXEMPLO DE FOR: equivalente ao exemplo de while acima
@@ -348,5 +348,8 @@ for (int numeracao = 1; numeracao <= 5; numeracao++) {
     }
 }
 
-
-
+/*
+VALOR DE SENTINELA (FLAG): indica o final da entrada de dados, ou seja,
+o usuário vai digitando os valores e então digita o valor da sentinela para indicar
+o fim da lista.
+ */
