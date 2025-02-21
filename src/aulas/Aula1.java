@@ -80,7 +80,7 @@ NÃO devem começar com números nem ter espaços ou palavras reservadas.
 //VARIÁVEL: espaço onde se pode guardar alguma informação ou valor.
         int idade = 33; //tipo da variável --> nome --> = --> valor atribuído
         long cpf; //variável sem valor atribuído ainda
-        cpf = 85390836553L; //valor atribuído à variável denominada "CPF". Não precisa repetir o tipo de dado aqui.
+        cpf = 12345678900L; //valor atribuído à variável denominada "CPF". Não precisa repetir o tipo de dado aqui.
 
         //NÃO É possível mudar o tipo da variável em Java. Mas você pode fazer Casting pra resgatar o valor em outra variável
 

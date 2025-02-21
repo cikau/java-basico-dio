@@ -131,7 +131,7 @@ ESTRUTURAS DE EXCEÇÃO: try-catch-finally, throw
 
 **EXCEÇÕES: ao executar o código Java, diferentes erros podem acontecer:
 erros de codificação feitos pelo programador, erros de entrada etc.
-Exceções NÃO são erros, mas os comportamentos não previstos e/ou
+Exceções NÃO são erros, mas comportamentos não previstos e/ou
  não desejados do nosso programa. Ao prever tais exceções, para evitar que
  elas aconteçam, o desenvolvedor estará implementando o Tratamento de
  Exceções.
