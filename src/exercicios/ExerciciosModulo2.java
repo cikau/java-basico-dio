@@ -20,4 +20,6 @@ public class ExerciciosModulo2 {
         System.out.println("A soma dos números digitados é igual a: " + soma);
     }
 
+
+
 }
